@@ -1,0 +1,49 @@
+# Maven build directory
+target/
+
+# Compiled class files
+*.class
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.swp
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# IDE-specific files
+
+## IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+
+## Eclipse
+.project
+.classpath
+.settings/
+
+## NetBeans
+nbproject/
+build/
+
+## Visual Studio Code
+.vscode/
+
+# Generated sources
+generated-sources/
+generated-test-sources/
+
+# MacOS metadata
+._*
+
+# Windows metadata
+Desktop.ini
+
+# Other unnecessary files
+*.bak
+*.orig
