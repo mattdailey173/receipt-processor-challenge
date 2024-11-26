@@ -12,8 +12,6 @@ import org.springframework.web.bind.annotation.RequestBody;
 import com.example.receipt_processor.model.Receipt;
 
 import io.swagger.v3.oas.annotations.Operation;
-import io.swagger.v3.oas.annotations.Parameter;
-import io.swagger.v3.oas.annotations.Parameters;
 import io.swagger.v3.oas.annotations.media.Content;
 import io.swagger.v3.oas.annotations.media.Schema;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
@@ -23,7 +21,7 @@ import io.swagger.v3.oas.annotations.responses.ApiResponses;
 public interface ReceiptController {
 
     //Process a receipt and generate an ID for it.
-   
+
     @PostMapping("/process")
     @Operation(
         summary = "Process a receipt",
@@ -64,8 +62,8 @@ public interface ReceiptController {
         )
     )
     ResponseEntity<Map<String, String>> processReceipt(
-        @RequestBody @Validated 
-       
+        @RequestBody @Validated
+
         Receipt receipt
     );
 
