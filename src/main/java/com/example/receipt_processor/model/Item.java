@@ -14,6 +14,11 @@ public class Item {
     @Pattern(regexp = "\\d+(\\.\\d{1,2})?", message = "Item price must be a valid decimal number")
     private String price;
 
+    public Item(String shortDescription, String price) {
+        this.shortDescription = shortDescription;
+        this.price = price;
+    }
+
     public String getShortDescription() {
         return shortDescription;
     }
